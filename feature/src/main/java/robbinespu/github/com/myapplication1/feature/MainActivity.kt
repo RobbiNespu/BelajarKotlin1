@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-
+//  Button function +. -. * and /
     fun sum(view: View){
         val a = number1.text.toString().toInt()
         val b = number2.text.toString().toInt()
@@ -21,12 +21,23 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun minus(view: View){
-
+        val a = number1.text.toString().toInt()
+        val b = number2.text.toString().toInt()
+        val result = a-b
+        textView2.text= "Result: $result"
     }
+
     fun multiply(view: View){
-
+        val a = number1.text.toString().toInt()
+        val b = number2.text.toString().toInt()
+        val result = a*b
+        textView2.text= "Result: $result"
     }
-    fun divide(view: View){
 
+    fun divide(view: View){
+        val a = number1.text.toString().toInt()
+        val b = number2.text.toString().toInt()
+        val result = a/b
+        textView2.text= "Result: $result"
     }
 }
